@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Nzi-ZE-Y3v">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -8,61 +8,138 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Tab Bar Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Brew Notes-->
+        <scene sceneID="m4w-gg-zS7">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="UITabBarController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                <viewController id="nq0-Lj-XLm" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5ew-WG-0Ao">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="OcC-4X-vwC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Brew Notes" image="note.text.badge.plus" catalog="system" id="khR-Wi-RGx"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9KN-PX-g6k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="99" y="864"/>
+        </scene>
+        <!--Find Beans-->
+        <scene sceneID="2Lm-jE-DhJ">
+            <objects>
+                <viewController id="b2r-8H-Uqa" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wg2-YS-Sxp">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="4cK-TW-lYg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Find Beans" image="map" catalog="system" id="QTA-KD-faO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ybh-gV-Ccg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1006" y="864"/>
+        </scene>
+        <!--Preferences-->
+        <scene sceneID="ZcJ-FK-rGg">
+            <objects>
+                <viewController id="fhI-xH-odp" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uIv-c7-aL6">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="41u-rs-Urd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Preferences" image="wrench.and.screwdriver" catalog="system" id="t5c-oD-FTx"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EsB-Vu-J1E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1900" y="437"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="cbn-Jy-dwF">
+            <objects>
+                <viewController id="SjS-Pd-yNY" customClass="UITabViewController" customModule="riveracrumc_FinalProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ybZ-Wb-Px9">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cuppa" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6G9-f4-YBF">
-                                <rect key="frame" x="56" y="86" width="314" height="101"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="78"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cuppa" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2UR-NY-uGM">
+                                <rect key="frame" x="60" y="81" width="270" height="117"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="117" id="Z5a-Nx-MVL"/>
+                                    <constraint firstAttribute="width" constant="270" id="ZZE-Pp-qB1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="79"/>
                                 <nil key="textColor"/>
                                 <color key="highlightedColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="your morning brew elevated." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9aL-cc-xb8">
-                                <rect key="frame" x="76" y="195" width="263" height="17"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e4h-cb-vfY">
+                                <rect key="frame" x="34" y="363" width="322" height="152"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="322" id="77I-IE-aam"/>
+                                    <constraint firstAttribute="height" constant="152" id="Put-fj-u4O"/>
+                                </constraints>
+                                <state key="normal" image="startbutton"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="your morning brew elevated." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aka-A8-Pgx">
+                                <rect key="frame" x="63.666666666666657" y="199" width="263" height="18"/>
                                 <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c4j-jd-0Kg">
-                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <color key="backgroundColor" systemColor="secondaryLabelColor"/>
-                                <items>
-                                    <tabBarItem title="Find Beans" image="map" catalog="system" selectedImage="map" id="Ptj-Zu-tUf"/>
-                                    <tabBarItem title="Preferences" image="wrench.and.screwdriver" catalog="system" selectedImage="wrench.and.screwdriver" id="s6l-sN-HQQ"/>
-                                    <tabBarItem title="Cup Notes" image="note.text.badge.plus" catalog="system" selectedImage="note.text" id="iCg-kU-g84"/>
-                                </items>
-                            </tabBar>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hqa-hQ-fIV">
-                                <rect key="frame" x="76" y="339" width="263" height="147"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="startbutton"/>
-                            </button>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <viewLayoutGuide key="safeArea" id="llJ-Bd-Dju"/>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="aka-A8-Pgx" firstAttribute="centerX" secondItem="ybZ-Wb-Px9" secondAttribute="centerX" id="39k-Yk-1p8"/>
+                            <constraint firstItem="e4h-cb-vfY" firstAttribute="centerX" secondItem="ybZ-Wb-Px9" secondAttribute="centerX" id="8Lq-d7-sNd"/>
+                            <constraint firstItem="2UR-NY-uGM" firstAttribute="top" secondItem="llJ-Bd-Dju" secondAttribute="top" constant="37" id="JPH-Qk-Je3"/>
+                            <constraint firstItem="aka-A8-Pgx" firstAttribute="top" secondItem="2UR-NY-uGM" secondAttribute="bottom" constant="1" id="Kk9-5u-hqK"/>
+                            <constraint firstItem="2UR-NY-uGM" firstAttribute="centerX" secondItem="ybZ-Wb-Px9" secondAttribute="centerX" id="LaW-Aq-SHP"/>
+                            <constraint firstItem="e4h-cb-vfY" firstAttribute="top" secondItem="aka-A8-Pgx" secondAttribute="bottom" constant="146" id="RDR-Pu-V33"/>
+                            <constraint firstItem="llJ-Bd-Dju" firstAttribute="bottom" secondItem="e4h-cb-vfY" secondAttribute="bottom" constant="246" id="UOo-by-qid"/>
+                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="RtT-GD-4Pz"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dqi-FR-wOd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="28.985507246376812" y="88.392857142857139"/>
+            <point key="canvasLocation" x="1900.0000000000002" y="-203.57142857142856"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="aXX-8g-04t">
+            <objects>
+                <tabBarController id="Nzi-ZE-Y3v" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wu2-Vb-pcv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="SjS-Pd-yNY" kind="relationship" relationship="viewControllers" id="tK4-34-K3Z"/>
+                        <segue destination="fhI-xH-odp" kind="relationship" relationship="viewControllers" id="cPX-pM-x8R"/>
+                        <segue destination="b2r-8H-Uqa" kind="relationship" relationship="viewControllers" id="gva-H9-oeb"/>
+                        <segue destination="nq0-Lj-XLm" kind="relationship" relationship="viewControllers" id="BCI-bl-wnA"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a3c-nQ-1MT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1007" y="100"/>
         </scene>
     </scenes>
     <resources>
+        <image name="house" catalog="system" width="128" height="106"/>
         <image name="map" catalog="system" width="128" height="110"/>
-        <image name="note.text" catalog="system" width="128" height="106"/>
         <image name="note.text.badge.plus" catalog="system" width="128" height="108"/>
         <image name="startbutton" width="322" height="152"/>
         <image name="wrench.and.screwdriver" catalog="system" width="128" height="120"/>
-        <systemColor name="secondaryLabelColor">
-            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>
