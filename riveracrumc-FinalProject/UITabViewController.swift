@@ -29,6 +29,38 @@ class UserPreference {
     
     var roastType: Int = 0;
     
+    var times : [Brews : Int] = [ .V60 : 120,
+                   .FrenchPress : 540, .AeroPress : 75
+    ]
+    
+    var steps : [Brews: [String]] = [.V60 : ["Bloom Grounds", "First Pour", "Second Pour" ], .FrenchPress : ["Bloom Grounds","Pour All", "Plunge"], .AeroPress : ["Bloom Grounds","Pour All", "Plunge"]
+    ]
+    
+    func adjustBrewLength(time : Int) -> Int {
+        switch brewLength {
+            case -1:
+                return time - 15;
+            case 0:
+                return time;
+            case 1:
+                return time + 15;
+            default:
+                return time;
+        }
+    }
+    func adjustRoastTT(time : Int) -> Int {
+        switch roastType {
+            case -1:
+                return time + 15;
+            case 0:
+                return time;
+            case 1:
+                return time - 15;
+            default:
+                return time;
+        }
+    }
+    
     func roastTypeDisplay() -> String{
         switch roastType{
         case -1:
