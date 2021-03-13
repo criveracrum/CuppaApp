@@ -72,6 +72,13 @@ class TimerViewController: UIViewController {
         if (seconds >= length){
             stepLabel.text = "Enjoy!";
             timer.invalidate();
+            let date = Date();
+            let timestamp = DateFormatter.localizedString(from: date, dateStyle: DateFormatter.Style.short, timeStyle: DateFormatter.Style.short)
+            
+            let newNote : Note = Note(Date: timestamp, Method: method , Size: UserPreference.sharedInstance.brewSize, Length: length, userNotes: "", roast: UserPreference.sharedInstance.roastTypeDisplay());
+            notes.append(newNote);
+            
+            
         }else{
             checkStep();
             stepLabel.text = steps[stepTracker];

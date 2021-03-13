@@ -16,6 +16,8 @@
 		635B799C25F6FA5D00A011FB /* UITabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635B799B25F6FA5D00A011FB /* UITabViewController.swift */; };
 		63D13A7125F9920C007BE846 /* PreferenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D13A7025F9920C007BE846 /* PreferenceViewController.swift */; };
 		63E26F8325FD2BEF00DB5067 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E26F8225FD2BEF00DB5067 /* TimerViewController.swift */; };
+		63E26F8625FD6D9400DB5067 /* NoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E26F8525FD6D9400DB5067 /* NoteViewController.swift */; };
+		63E26F8925FD6E6300DB5067 /* NoteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E26F8825FD6E6300DB5067 /* NoteTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		635B799B25F6FA5D00A011FB /* UITabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabViewController.swift; sourceTree = "<group>"; };
 		63D13A7025F9920C007BE846 /* PreferenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceViewController.swift; sourceTree = "<group>"; };
 		63E26F8225FD2BEF00DB5067 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		63E26F8525FD6D9400DB5067 /* NoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewController.swift; sourceTree = "<group>"; };
+		63E26F8825FD6E6300DB5067 /* NoteTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 				6354BD2C25F6F0270085944B /* SceneDelegate.swift */,
 				6354BD2E25F6F0270085944B /* ViewController.swift */,
 				6354BD3025F6F0270085944B /* Main.storyboard */,
+				63E26F8825FD6E6300DB5067 /* NoteTableViewController.swift */,
+				63E26F8525FD6D9400DB5067 /* NoteViewController.swift */,
 				63E26F8225FD2BEF00DB5067 /* TimerViewController.swift */,
 				63D13A7025F9920C007BE846 /* PreferenceViewController.swift */,
 				635B799B25F6FA5D00A011FB /* UITabViewController.swift */,
@@ -146,10 +152,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63E26F8625FD6D9400DB5067 /* NoteViewController.swift in Sources */,
 				63D13A7125F9920C007BE846 /* PreferenceViewController.swift in Sources */,
 				635B799C25F6FA5D00A011FB /* UITabViewController.swift in Sources */,
 				6354BD2F25F6F0270085944B /* ViewController.swift in Sources */,
 				6354BD2B25F6F0270085944B /* AppDelegate.swift in Sources */,
+				63E26F8925FD6E6300DB5067 /* NoteTableViewController.swift in Sources */,
 				63E26F8325FD2BEF00DB5067 /* TimerViewController.swift in Sources */,
 				6354BD2D25F6F0270085944B /* SceneDelegate.swift in Sources */,
 			);
