@@ -8,7 +8,7 @@
 import UIKit
 
 class NoteViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
@@ -16,11 +16,13 @@ class NoteViewController: UIViewController {
     }
     func setup(){
         if let note = curNote {
+            
             dateLabel.text = note.Date
             methodLabel.text = note.Method.name
             sizeLabel.text = String(note.Size)
             lengthLabel.text = String(note.Length)
             roastLabel.text = note.roast
+            
         }
        
     }
@@ -33,12 +35,37 @@ class NoteViewController: UIViewController {
     @IBOutlet weak var lengthLabel: UILabel!
     
     @IBAction func textField(_ sender: UITextField) {
+        if let text = sender.text{
+            curNote?.userNotes = text;
+            
+        }
     }
     
     @IBAction func satisfied(_ sender: UIButton) {
-        
+        let alertController = UIAlertController(title: "Satified!",
+                                                message: "We are glad you are satisfied. Happy brewing!", preferredStyle: .alert)
+        let okayAction = UIAlertAction(title: "Thanks!", style: .default, handler: nil);
+        alertController.addAction(okayAction);
+        present(alertController, animated: true, completion: nil);
     }
     @IBAction func dissatisfied(_ sender: UIButton) {
+        let suggestions = ["a different grind size", "changing your brew length", "a courser grind"];
+        let num = Int.random(in: 0...(suggestions.count-1));
+        if (UserPreference.sharedInstance.suggestions == true){
+            let alertController = UIAlertController(title: "Dissatisfied!",
+                                                    message: "We are sorry that you are dissatisfied. Maybe you can try \(suggestions[num]).", preferredStyle: .alert)
+            let okayAction = UIAlertAction(title: "Thanks!", style: .default, handler: nil);
+            alertController.addAction(okayAction);
+            present(alertController, animated: true, completion: nil);
+        }
+        else {
+            let alertController = UIAlertController(title: "Dissatisfied!",
+                                                    message: "You currently have suggestions turned off. We are sorry we can't help.", preferredStyle: .alert)
+            let okayAction = UIAlertAction(title: "OK", style: .default, handler: nil);
+            alertController.addAction(okayAction);
+            present(alertController, animated: true, completion: nil);
+        }
+        
         
     }
     /*
